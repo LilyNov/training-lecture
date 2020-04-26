@@ -22,3 +22,20 @@ td {
 tr:hover td {
   background: #ccddff;
 }
+
+.video-container {
+  position: relative;
+  padding-bottom: 75%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставь 75%) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
